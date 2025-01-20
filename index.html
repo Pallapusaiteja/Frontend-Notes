@@ -1,0 +1,41 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>My page</title>
+</head>
+
+
+<body>
+       <table align = "center">
+       	<tr>
+       		<td>No:</td>
+       		<td><input type = "text" id = "t1"></td>
+       	</tr>
+       		<tr>
+       		<td>Name:</td>
+       		<td><input type = "text" id = "t2"></td>
+       	</tr>
+       		<tr>
+       		<td>Address:</td>
+       		<td><input type = "text" id = "t3"></td>
+       	</tr>
+
+       	<tr><td>&nbsp;</td>
+       		<td><button onclick = "f1()">submit</button></td>
+       	</tr>
+       </table>
+       <script>
+       function f1()
+       {
+       	var no = document.getElementById('t1').value;
+       	var name = document.getElementById('t2').value;
+       var add = document.getElementById('t3').value;
+
+       localStorage.setItem('sno',no);
+       localStorage.setItem('sname',name);
+       localStorage.setItem('sadd',add);
+       }
+   </script>
+	
+</body>
+</html>

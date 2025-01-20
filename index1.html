@@ -1,0 +1,70 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>Mypage</title>
+	</head>
+	<body>
+		<center>
+			
+			<fieldset id  = "cur_id">
+				<legend >Current Address</legend>
+		<table>
+			<tr>
+				<td>Address:</td>
+				<td><input type = "text" id = "t1"/></td>
+			</tr>
+			<tr>
+				<td>Pincode"</td>
+				<td><input type = "text" id = "t2"/></td>
+			</tr>
+			<tr>
+				<td>City:</td>
+				<td><input type = "text" id = "t3"/></td>
+			</tr>
+		</table>
+
+	</fieldset>
+</center>
+	<br>
+	<br>
+	<input type = "checkbox" id = "box" onclick = "f1()"/> Is Permanent Address is same as Current Address
+	<br>
+	<br>
+	<center>
+<fieldset id = per_id>
+	<legend>Permanent Address</legend>
+		<table>
+			<tr>
+				<td>Address:</td>
+				<td><input type = "text" id = "t1"/></td>
+			</tr>
+			<tr>
+				<td>Pincode"</td>
+				<td><input type = "text" id = "t2"/></td>
+			</tr>
+			<tr>
+				<td>City:</td>
+				<td><input type = "text" id = "t3"/></td>
+			</tr>
+		</table>
+	</fieldset>
+	</center>
+
+
+
+<script>
+          function f1()
+          {
+          	if(document.getElementById('box').checked) {
+              document.getElementById('per_id').style.display = "none";
+          	}
+          	else{
+          		document.getElementById('cur_id').style.display = "block";
+          	}
+          	
+          }
+
+
+</script>
+	</body>
+</html>

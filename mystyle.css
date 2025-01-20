@@ -1,0 +1,14 @@
+body
+{
+   height:100vh;
+	background:linear-gradient(black,darkblue);
+   display:flex;
+   justify-content:center ;
+   align-items:center;
+}
+span
+{
+   font-size:40px;
+   background-color: white;
+
+}
